@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+/*Formatação da página e dos parágrafos*/
+body {	
+	background-image: url("../imagens/background1.png");
+	margin: 0%;
+}
+
+p {
+	font-family: 'Candara', 'Calibri';
+	font-size: 12pt;
+	color: rgb(245,5,157);
+	text-align: justify;
+	text-indent: 2.5%;
+}
+
+/*Formatação do corpo do site (interface)*/
+div#interface {
+	background-color: rgb(30,30,30);
+	width: 67%;
+	margin: -3% 18% 0% 14%;
+	padding: 1.5% 1.5% 1.5% 1.5%;
+	box-shadow: 0px 0px 30px rgba(0,0,0,.6);
+}
+
+/*Formatação do cabeçalho com o título do blog e com a imagem da logo*/
+header#cabecalho {
+	background-color: rgb(30,30,30);
+	border-bottom: 4pt double black;
+	margin-bottom: 1%;
+}
+
+header#cabecalho h1 {
+	font-family: 'Candara', 'Calibri';
+	font-size: 22pt;
+	color: rgb(245,5,157);
+	padding: 11%;
+	margin-left: 16%;
+	margin-bottom: -9%;
+}
+
+img#icone { /*Para formatar o ícone do blog no cabeçalho*/
+	position: absolute;
+	left: 46%;
+	top: 6%;
+}
+
+/*Formatação do menu*/
+nav#menuprincipal {
+	font-family: 'Candara', 'Calibri';
+	font-size: 11pt;
+	display: block;
+}
+
+nav#menuprincipal ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -5.3%;
+	left: 60.1%;
+	width: 28%;
+}
+
+nav#menuprincipal ul li {
+	display: inline-block;
+	background-color: #888888;
+	margin: 5% 1% 5% 1%;
+	transition: background-color 1s;
+	padding: 1% 1.5% 1% 1.5%;
+}
+
+nav#menuprincipal ul li:hover {
+	background-color: #dddddd;
+}
+
+nav#menuprincipal ul li a {
+	color: #000000;
+	text-decoration: none;
+}
+
+nav#menuprincipal ul li a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+/*Formatação da migalha de pão*/
+section#corpo h3 a {
+	font-family: 'Candara', 'Calibri';
+	font-size: 14pt;
+	color: rgb(3,148,139);
+	text-decoration: none;
+}
+
+section#corpo h3 a:hover { /*Para quando o mouse passar por cima da migalha de pão, ela mudar de cor*/
+	color: #ffffff;
+}
+
+/*Formatando os títulos (h1, h2 e h3) e a linha divisória depois do post 1 e do post 2*/
+p.linha { /*Como há um hiperlink juntamente com os títulos do 2º e 3º posts, não consegui fazer uma border como havia feito na página index, fiz as linhas que dividem os posts assim então*/
+	border-top: 1pt solid black;
+	margin-bottom: -3%;
+	margin-top: -4%;
+}
+
+section#corpo h1 {
+	font-family: 'Candara', 'Calibri';
+	font-size: 20pt;
+	color: rgb(245,5,157);
+	margin-bottom: 0%;
+	margin-top: 7%;
+}
+
+h2 {
+	font-family: 'Candara', 'Calibri';
+	font-size: 13pt;
+	color: rgb(245,5,157);
+	margin-top: 0%;
+	margin-bottom: 0%;
+}
+
+h2.titulospost { /*Para formatar de forma diferente o título com id 'titulopost'*/
+	font-size: 18pt;
+	margin-top: 0%;
+	margin-bottom: 0%;
+}
+
+h2.titulospost2 { /*Para formatar de forma diferente o título com id 'titulopost2'*/
+	font-size: 18pt;
+	margin-top: 2%;
+	margin-bottom: 0%;
+}
+
+h3 {
+	font-family: 'Candara', 'Calibri';
+	font-size: 13pt;
+	color: rgb(245,5,157);
+	margin-top: 0%;
+	margin-bottom: 5%;
+}
+
+h4 {
+	font-family: 'Candara', 'Calibri';
+	font-size: 13pt;
+	color: rgb(245,5,157);
+	margin-top: 3%;
+	margin-bottom: -1%;
+}
+
+/*Formatação das listas dos posts*/
+ol h3 {	
+	font-family: 'Candara', 'Calibri';
+	font-size: 15pt;
+	color: rgb(245,5,157);
+	text-align: justify;
+	text-indent: 0%;
+	margin-bottom: 0.5%;
+	margin-top: 1.5%;
+}
+
+ul li {
+	font-family: 'Candara', 'Calibri';
+	font-size: 12pt;
+	color: rgb(245,5,157);
+	text-align: justify;
+	text-indent: 0%;
+	margin-bottom: 0.5%;
+}
+
+/*Formatação das imagens e vídeo*/
+iframe.multimidia, img.multimidia { /*PPara centralizar as imagens e vídeos*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+iframe {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	width: 62%;
+}
+
+section#corpo img {
+	margin-top: 2%;
+}
+
+img#p1img1 { /*Por questão de responsividade, foi colocado width para as imagens e vídeos, sendo que cada imagem tem a sua largura específica*/
+	width: 54.5%;
+}
+
+img#p1img2 {
+	width: 36.5%;
+}
+
+img#p2img1 {
+	width: 76%;
+}
+
+img#p2img2 {
+	width: 66%;
+}
+
+img#p2img3 {
+	width: 40.5%;
+}
+
+img#p3img5 {
+	width: 24.4%;
+}
+
+/*Formatação das referências dos posts*/
+.mais { /*Para colocar uma margem diferente*/
+	text-indent: 0px;
+	margin-bottom: 4%;
+}
+
+p a { /*Para aplicar formatação diferente dos demais parágrafos, com cor diferente, tamanho, etc*/
+	font-family: 'Candara', 'Calibri';
+	color: rgb(3,148,139);
+	font-size: 11pt;
+	text-decoration: none;
+}
+
+p a:hover { /*Para quando o mouse passar por cima da tag 'a', ela mudar de cor*/
+	color: #ffffff;
+}
+
+/*posicionamento do botão para voltar ao topo da página*/
+a.blog { 
+	position: fixed;
+	bottom: 0%;
+	right: 5%;
+}
+
+/*Formatação do rodapé com o parágrafo e a imagem da logo*/
+footer#rodape {
+	border-top: 2pt solid black;
+	margin-top: -4%;
+	position: relative;
+}
+
+footer#rodape p {
+	text-align: center;
+	font-size: 10pt;
+}
+
+a#redesocial1 { /*Para formatar o ícone do instagram do rodapé*/
+	position: absolute;
+	left: 45.5%;
+}
+
+a#redesocial2 { /*Para formatar o ícone do linkedin do rodapé*/
+	position: absolute;
+	left: 50.5%;
+}
+
+img#logo { /*Para formatar o ícone do blog do rodapé*/
+	margin-bottom: -1%;
+	margin-top: 5%;
+	margin-left: 0.5%;
+	margin-right: 0.5%;	
+	width: 5.6%;
+}
