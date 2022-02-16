@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+
+<head> 
+	<meta charset="UTF-8"/>
+	<title> Geek Girl - Tudo sobre Programação </title>
+	<link rel="stylesheet" type="text/CSS" href="css/contato.css"/>
+	<script type="text/javascript" language="javascript" src="js/script.js"></script>
+	<link rel="shortcut icon" href="imagens/logo_icone.png"/>
+</head>
+<body>
+<div id="interface">
+<!-- Área do cabeçalho do conteúdo -->
+<header id="cabecalho">
+	<img id="icone" src="imagens/logo_grande.png"/>
+	<h1>Geek Girl - Tudo sobre Programação</h1>
+	
+	<nav id="menuprincipal">
+	<ul>
+		<li onmouseover="mudaIcone('imagens/icone_home.png')" onmouseout="mudaIcone('imagens/icone_contato.png')"><a href="index.html">Home</a></li>
+		<li onmouseover="mudaIcone('imagens/icone_equipe.png')" onmouseout="mudaIcone('imagens/icone_contato.png')"><a href="equipe.html">Equipe</a></li>
+		<li onmouseover="mudaIcone('imagens/icone_blog.png')" onmouseout="mudaIcone('imagens/icone_contato.png')"><a href="blog.html">Blog</a></li>
+		<li onmouseover="mudaIcone('imagens/icone_contato.png')"><a href="contato.html">Contato</a></li>
+	</ul>
+	</nav>
+	
+	<div style="text-align:right;">
+	<img id="ico" src="imagens/icone_contato.png"/>
+	</div>
+	
+</header>
+<!-- Área do corpo do conteúdo -->
+<section id="corpo">
+	<h3><a href="index.html">Home</a> / <a href="contato.html">Contato</a></h3>
+	
+	<h3 id="bemvindo1">Olá, visitante! Qualquer dúvida, sugestão ou parcerias, entre em contato por telefone, e-mail ou WhatsApp!</h3>
+	
+	<hgroup id="contato">
+	<ul>
+		<li><img src="imagens/logo_fone.png"/> Telefone: +55 (48) 3332-0362</li>
+		<li><a href="https://api.whatsapp.com/send?phone=5548999330759&text=Ol%C3%A1!" target="_blank"><img src="imagens/logo_whats.png"/></a> Celular: +55 (48) 99933-0759</li>
+		<li><a href="mailto:contato@geekgirl.com.br" target="_blank"><img src="imagens/logo_mail.png"/></a> E-mail: contato@geekgirl.com.br</li>
+	</ul>
+	</hgroup>
+
+	<h3 id="bemvindo2">Ou, se preferir, faça contato preenchendo o formulário abaixo:</h3>
+	<hgroup id="formulario">
+		
+	<form id="formContato" method="post" action>
+	<fieldset id="usuario"><legend>Identificação</legend>
+		<p><label for="cNome">Nome: </label> 
+		<input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo*" required onchange="maiusculas()" onclick="trocaCorCampo()"/></p>
+		<p><label for="cMail">E-mail: </label>
+		<input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="aaaa@aaaa.com.br*" required onclick="trocaCorCampo()"/></p>
+		<p><label for="cNasc">Data de Nascimento: </label> 
+		<input type="date" name="tNasc" id="cNasc" onclick="trocaCorCampo()"/></p>
+		<fieldset id="sexo"><legend>Sexo</legend>
+			<input type="radio" name="tSexo" id="cFem" checked/> <label for="cFem">Feminino</label><br/>
+			<input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc">Masculino</label><br/>
+			<input type="radio" name="tSexo" id="cOutro"/> <label for="cOutro">Outro</label>
+		</fieldset>
+	</fieldset>
+	
+	<fieldset id="endereco"><legend>Endereço</legend>
+    <p><label for="cRua">Rua: </label> 
+	<input type="text" name="tRua" id="cRua" size="16" maxlength="80" placeholder="Rua, Av., Travessa, etc" onchange="maiusculas()" onclick="trocaCorCampo()"/></p>
+    <p><label for="cNum">Número: </label> 
+	<input type="number" name="tNum" id="cNum" min="0" max="99999" onclick="trocaCorCampo()"/></p>
+	<p><label for="cComp">Complemento: </label> 
+	<input type="text" name="tComp" id="cComp" size="20" maxlength="80" placeholder="Edifício, Bloco, Apartamento" onchange="maiusculas()" onclick="trocaCorCampo()"/></p>
+	<p><label for="cCid"> Cidade: </label> 
+	<input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Sua Cidade" onchange="maiusculas()" onclick="trocaCorCampo()"/></p>
+	<p><label for="cEst"> Estado: </label> 
+	<select name="tEst" id="cEst">
+		<optgroup label="Região Sul">
+			<option value="PR">Paraná</option>
+			<option value="RS">Rio Grande do Sul</option>
+			<option value="SC" selected>Santa Catarina</option>
+		</optgroup>
+		<optgroup label="Região Sudeste">
+			<option value="ES">Espírito Santo</option>
+			<option value="MG">Minas Gerais</option>
+			<option value="RJ">Rio de Janeiro</option>
+			<option value="SP">São Paulo</option>
+		</optgroup>
+		<optgroup label="Região Centro-Oeste">
+			<option value="DF">Distrito Federal</option>
+			<option value="GO">Goiás</option>
+			<option value="MT">Mato Grosso</option>
+			<option value="MS">Mato Grosso do Sul</option>
+		</optgroup>
+		<optgroup label="Região Nordeste">
+			<option value="AL">Alagoas</option>
+			<option value="BA">Bahia</option>
+			<option value="CE">Ceará</option>
+			<option value="MA">Maranhão</option>
+			<option value="PB">Paraíba</option>
+			<option value="PE">Pernambuco</option>
+			<option value="PI">Piauí</option>
+			<option value="RN">Rio Grande do Norte</option>
+			<option value="SE">Sergipe</option>
+		</optgroup>
+		<optgroup label="Região Norte">
+			<option value="AC">Acre</option>
+			<option value="AM">Amazonas</option>
+			<option value="AP">Amapá</option>
+			<option value="PA">Pará</option>
+			<option value="RO">Rondônia</option>
+			<option value="RR">Roraima</option>
+			<option value="TO">Tocantins</option>
+		</optgroup>
+	</select></p>
+	</fieldset>
+			
+	<fieldset id="mensagem"><legend>Escreva sua mensagem</legend>
+    <p><label for="cMsg">Mensagem: </label> 
+	<textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem*" required onclick="trocaCorCampo()"/></textarea></p>
+	<p><input type="checkbox" name="tNotif" id="cNotif" checked/> 
+	<label for="cNotif">Desejo receber notificação de novas postagens</label></p>
+	</fieldset>			
+	
+	<input type="image" name="tEnviar" class="multimidia" src="imagens/botao_enviar1.png" onclick="enviarForm()"/>
+	</form>
+	</hgroup>
+	
+	<hgroup id="localizacao">
+	<h3 id="bemvindo3">Veja abaixo a nossa localização e venha nos visitar:</h3>
+	
+	<p id="local">Rua Rui Barbosa, 75, Agronômica - Florianópolis/SC</p>
+	
+	<iframe class="multimidia" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.66268047162!2d-48.53721458541882!3d-27.57297742770337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273872386f8e31%3A0x7ff719f348107ecb!2sR.%20Rui%20Barbosa%2C%2075%20-%20Agron%C3%B4mica%2C%20Florian%C3%B3polis%20-%20SC%2C%2088025-301!5e0!3m2!1spt-BR!2sbr!4v1631148888440!5m2!1spt-BR!2sbr" width="460" height="345" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</hgroup>
+	
+	<a class="blog" href="contato.html"><img src="imagens/icone_volta_topo.png"/></a>
+	
+</section>
+	
+<!-- Área do rodapé do conteúdo -->
+<footer id="rodape">
+	
+	<p><a id="redesocial1" href="https://www.instagram.com/ba.carolg/" target="_blank"><img src="imagens/logo_insta.png"/></a>
+	   <a id="redesocial2" href="https://www.linkedin.com/in/bárbara-gramkow-55b1371a0/" target="_blank"><img src="imagens/logo_linkedin.png"/></a></p>
+	
+	<p>&copy; Copyright 2021 by Geek Girl  
+		<img id="logo" src="imagens/logo_med.png"/> 
+	E-mail: contato@geekgirl.com.br</p>
+	
+	<p><script type="text/javascript" language="javascript">
+	document.write(Date());
+	</script></p>
+	
+</footer>
+	
+</div>
+</body>
+</html>

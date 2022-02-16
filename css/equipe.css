@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/*Formatação da página e dos parágrafos*/
+body {	
+	background-image: url("../imagens/background1.png");
+	margin: 0%;
+}
+
+p {
+	font-family: 'Candara', 'Calibri';
+	font-size: 12pt;
+	color: rgb(245,5,157);
+	text-align: center;
+}
+
+/*Formatação do corpo do site (interface)*/
+div#interface {
+	background-color: rgb(30,30,30);
+	width: 67%;
+	margin: -3% 18% 0% 14%;
+	padding: 1.5% 1.5% 1.5% 1.5%;
+	box-shadow: 0px 0px 30px rgba(0,0,0,.6);
+}
+
+/*Formatação do cabeçalho com o título do blog e com a imagem da logo*/
+header#cabecalho {
+	background-color: rgb(30,30,30);
+	border-bottom: 4pt double black;
+	margin-bottom: 1%;
+}
+
+header#cabecalho h1 {
+	font-family: 'Candara', 'Calibri';
+	font-size: 22pt;
+	color: rgb(245,5,157);
+	padding: 11%;
+	margin-left: 16%;
+	margin-bottom: -9%;
+}
+
+img#icone { /*Para formatar o ícone do blog no cabeçalho*/
+	position: absolute;
+	left: 46%;
+	top: 6%;
+}
+
+/*Formatação do menu*/
+nav#menuprincipal {
+	font-family: 'Candara', 'Calibri';
+	font-size: 11pt;
+	display: block;
+}
+
+nav#menuprincipal ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -5.3%;
+	left: 61.3%;
+	width: 28%;
+}
+
+nav#menuprincipal ul li {
+	display: inline-block;
+	background-color: #888888;
+	margin: 5% 1% 5% 1%;
+	transition: background-color 1s;
+	padding: 1% 1.5% 1% 1.5%;
+}
+
+nav#menuprincipal ul li:hover {
+	background-color: #dddddd;
+}
+
+nav#menuprincipal ul li a {
+	color: #000000;
+	text-decoration: none;
+}
+
+nav#menuprincipal ul li a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+/*Formatação da migalha de pão*/
+section#corpo h3 a {
+	font-family: 'Candara', 'Calibri';
+	font-size: 14pt;
+	color: rgb(3,148,139);
+	text-decoration: none;
+}
+
+section#corpo h3 a:hover { /*Para quando o mouse passar por cima da migalha de pão, ela mudar de cor*/
+	color: #ffffff;
+}
+
+/*Formatação da área de equipe*/
+section#corpo div{
+	border: 1pt solid rgb(3,148,139);
+	padding-top: 3%;
+	padding-bottom: 1%;
+	margin: auto;
+	width: 90%;
+	background-color: rgb(40,40,40);
+}
+
+
+/*Formatação da imagem*/
+section#corpo img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Formatação dos títulos h3*/
+h3 {
+	font-family: 'Candara', 'Calibri';
+	font-size: 13pt;
+	color: rgb(245,5,157);
+	margin-top: 0%;
+	margin-bottom: 5%;
+}
+
+/*Formatação do rodapé com o parágrafo e a imagem da logo*/
+footer#rodape {
+	border-top: 2pt solid black;
+	margin-top: 3%;
+	position: relative;
+}
+
+footer#rodape p {
+	font-size: 10pt;
+	margin-left: 2.5%;
+}
+
+a#redesocial1 { /*Para formatar o ícone do instagram do rodapé*/
+	position: absolute;
+	left: 45.6%;
+}
+
+a#redesocial2 { /*Para formatar o ícone do linkedin do rodapé*/
+	position: absolute;
+	left: 50.5%;
+}
+
+img#logo { /*Para formatar o ícone do blog do rodapé*/
+	margin-bottom: -1%;
+	margin-top: 5%;
+	margin-left: 0.5%;
+	margin-right: 0.5%;	
+	width: 5.7%;
+}
